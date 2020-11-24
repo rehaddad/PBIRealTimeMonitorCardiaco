@@ -16,7 +16,8 @@ namespace MonitorCardiacoRealTime
                 try
                 {
                     // Declare values that we're about to send
-                    String currentTime = DateTime.UtcNow.ToString();
+                    //String currentTime = DateTime.UtcNow.ToString();
+                    String currentTime = DateTime.UtcNow.ToString("yyyy-mm-ddThh:mm:ss");
                     Random r = new Random();
                     int currentValue = r.Next(50, 200);
                     int min = r.Next(1, 50);
